@@ -1,8 +1,11 @@
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 bin
 obj
+packages
 App_Data
 *.suo
+*.user
+App.UI.Web/Content/themes/base/minified
 
 # mstest test results
 TestResults
