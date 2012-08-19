@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.Infrastructure", "FB.Validation\FB.Infrastructure.csproj", "{CE1F79BC-93A8-4DED-9C56-EF79121AE0FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.Infrastructure", "FB.Infrastructure\FB.Infrastructure.csproj", "{CE1F79BC-93A8-4DED-9C56-EF79121AE0FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FB.MVC", "FB.MVC\FB.MVC.csproj", "{75AE1915-5FF4-4680-A4C5-4C0225FCDD84}"
 EndProject

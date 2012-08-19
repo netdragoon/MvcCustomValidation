@@ -217,7 +217,7 @@
       <Project>{75ae1915-5ff4-4680-a4c5-4c0225fcdd84}</Project>
       <Name>FB.MVC</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FB.Validation\FB.Infrastructure.csproj">
+    <ProjectReference Include="..\FB.Infrastructure\FB.Infrastructure.csproj">
       <Project>{ce1f79bc-93a8-4ded-9c56-ef79121ae0fe}</Project>
       <Name>FB.Infrastructure</Name>
     </ProjectReference>
