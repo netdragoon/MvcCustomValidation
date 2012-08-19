@@ -46,6 +46,7 @@
     <Compile Include="Validation\BaseValidationAttribute.cs" />
     <Compile Include="Validation\DisplayAttribute.cs" />
     <Compile Include="Validation\RequiredAttribute.cs" />
+    <Compile Include="Validation\StringLengthAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FB.Contracts\FB.Contracts.csproj">

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using FB.Contracts.Services;
 using TinyIoC;
 using FB.Contracts.Common;
@@ -16,6 +17,13 @@ namespace App.UI.Web.Common
         {
             return TinyIoC.TinyIoCContainer.Current.Resolve<T>(name);
         }
+
+        public T Resolve<T>(string name, IDictionary<string, object> namedParams) where T : class
+        {
+            return TinyIoC.TinyIoCContainer.Current.Resolve<T>(name,
+                            TinyIoC.NamedParameterOverloads.FromIDictionary(namedParams));
+        }
+
 
         public static void Bootstrap(string defaultLang)
         {
@@ -37,8 +45,17 @@ namespace App.UI.Web.Common
                                ValidationKind.RequiredField.ToMetadata())
                      .AsSingleton();
 
+            container.Register<IValidator>((tinyCtnr, namedParams) =>
+                        new FB.Infrastructure.Services.Validation.StringLengthValidator((int)namedParams["minLength"], (int)namedParams["maxLength"]));
+
+                               
+                
+               
+                     //.AsSingleton();
+
             #endregion
             
         }
+
     }
 }

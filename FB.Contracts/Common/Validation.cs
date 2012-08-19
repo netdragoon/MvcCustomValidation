@@ -8,6 +8,7 @@ namespace FB.Contracts.Common
     public enum ValidationKind
     {
         RequiredField,
+        StringLength,
 
     }
 }

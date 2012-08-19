@@ -15,7 +15,7 @@ namespace App.UI.Web.Models
         public string OldPassword { get; set; }
 
         [Required]
-        //[StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, MinimumLength = 6)] //ErrorMessage = "The {0} must be at least {2} characters long.", 
         //[DataType(DataType.Password)]
         [Display(Name = "New password")]
         public string NewPassword { get; set; }
@@ -47,15 +47,15 @@ namespace App.UI.Web.Models
         [Display(Name = "User name")]
         public string UserName { get; set; }
 
-        //[Required]
+        [Required]
         //[DataType(DataType.EmailAddress)]
         [Display(Name = "Email address")]
         public string Email { get; set; }
 
         [Required]
-        //[StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, MinimumLength = 6)]
         //[DataType(DataType.Password)]
-        //[Display(Name = "Password")]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         //[DataType(DataType.Password)]
