@@ -51,10 +51,7 @@ namespace App.UI.Web.Common
                         ValidationKind.StringLength.ToMetadata()
             );
 
-                               
-                
-               
-                     //.AsSingleton();
+
 
             #endregion
             

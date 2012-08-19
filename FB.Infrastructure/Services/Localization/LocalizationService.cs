@@ -22,7 +22,7 @@ namespace FB.Infrastructure.Services.Localization
         private static readonly Dictionary<string, string> enTranslations = new Dictionary<string, string>
         {
             { "RequiredValidationFailed", "Field {0} is required" },
-            { "StringLengthValidationFailed", "Field {0} length has to be detween {1} and {2}" },
+            { "StringLengthValidationFailed", "Field {0} length has to be between {1} and {2}" },
 
         };
 
