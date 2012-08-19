@@ -15,12 +15,14 @@ namespace FB.Infrastructure.Services.Localization
             { "Confirm password", "Potwierdź hasło"},
             { "Remember me?", "Pamiętaj mnie?" },
             { "RequiredValidationFailed", "Pole {0} jest wymagane" },
+            { "StringLengthValidationFailed", "{0} musi mieć długość między {1} a {2}" },
 
         };
 
         private static readonly Dictionary<string, string> enTranslations = new Dictionary<string, string>
         {
             { "RequiredValidationFailed", "Field {0} is required" },
+            { "StringLengthValidationFailed", "Field {0} length has to be detween {1} and {2}" },
 
         };
 

@@ -45,8 +45,11 @@ namespace App.UI.Web.Common
                                ValidationKind.RequiredField.ToMetadata())
                      .AsSingleton();
 
+
             container.Register<IValidator>((tinyCtnr, namedParams) =>
-                        new FB.Infrastructure.Services.Validation.StringLengthValidator((int)namedParams["minLength"], (int)namedParams["maxLength"]));
+                        new FB.Infrastructure.Services.Validation.StringLengthValidator((int)namedParams["minLength"], (int)namedParams["maxLength"]),
+                        ValidationKind.StringLength.ToMetadata()
+            );
 
                                
                 

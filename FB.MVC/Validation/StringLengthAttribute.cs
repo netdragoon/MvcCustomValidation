@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using FB.Contracts.Services;
 using FB.Contracts.Common;
+using FB.MVC.Translations;
 
 namespace FB.MVC.Validation
 {
@@ -29,6 +30,12 @@ namespace FB.MVC.Validation
                             }
                         );
             return validator;
+        }
+
+        public override string FormatErrorMessage(string name)
+        {
+            return string.Format(TranslationHelper.Translate(ErrorMessageSnippet),
+                name, MinimumLength, MaximumLength);
         }
     }
 }
